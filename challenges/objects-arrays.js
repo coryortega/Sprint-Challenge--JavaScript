@@ -6,29 +6,66 @@
   object name, diet, weight, length, period
 */
 
+class Dinosaur {
+  constructor(attributes) {
+      this.name = attributes.name;
+      this.diet = attributes.diet;
+      this.weight = attributes.weight;
+      this.length = attributes.length;
+      this.period = attributes.period
+  }
+  speak() {
+      return ("RAWERSRARARWERSARARARRRR!");
+  }
+}
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
+
+const tyrannosaurus = new Dinosaur({
+  name: 'Tyrannosaurus',
+  diet: 'Carnivorous',
+  weight: '7000kg',
+  length: '12m',
+  period: 'Late Cretaceous',
+});
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
+const stegosaurus = new Dinosaur({
+  name: 'Stegosaurus',
+  diet: 'Herbivorous',
+  weight: '2000kg',
+  length: '9m',
+  period: 'Late Jurassic',
+});
+
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+
+const velociraptor = new Dinosaur({
+  name: 'Velociraptor',
+  diet: 'Carnivorous',
+  weight: '15kg',
+  length: '1.8',
+  period: 'Late Cretaceous',
+});
 
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyrannosaurus.speak());
 
 
 // ==== Arrays ====
